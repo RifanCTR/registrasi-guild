@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registration Form</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+            integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="wrapper" style="background-image: url('images/bg-registration-form-1.jpg');">
+        <div class="inner">
+            <div class="image-holder">
+                <img src="images/registration-form-1.jpg" alt="Registration Form">
+            </div>
+            <form id="registrationForm" action="javascript:void(0);">
+                <h3>Excellent Form</h3>
+                <div class="form-group">
+                    <input type="text" id="namaLengkap" name="namaLengkap" placeholder="Nama Lengkap" class="form-control" required>
+                    <input type="text" id="namaPanggilan" name="namaPanggilan" placeholder="Nama Panggilan" class="form-control" required>
+                </div>
+                <div class="form-wrapper">
+                    <input type="text" id="username" name="username" placeholder="Username atau ID" class="form-control" required>
+                    <i class="zmdi zmdi-account"></i>
+                </div>
+                <div class="form-wrapper">
+                    <input type="text" id="nomorWhatsApp" name="nomorWhatsApp" placeholder="Nomor WhatsApp" class="form-control" required>
+                    <i class="zmdi zmdi-whatsapp"></i>
+                </div>
+                <div class="form-wrapper">
+                    <input type="text" id="tempatTinggal" name="tempatTinggal" placeholder="Tempat Tinggal" class="form-control" required>
+                    <i class="zmdi zmdi-pin"></i>
+                </div>
+                <div class="form-wrapper">
+                    <input type="text" id="Gender" name="Gender" placeholder="Gender" class="form-control" required>
+                    <i class="zmdi zmdi-male-female" style="font-size: 17px;"></i>
+                </div>
+                <div class="form-wrapper">
+                    <input type="number" id="umur" name="umur" placeholder="Umur" class="form-control" required>
+                    <i class="zmdi zmdi-info"></i>
+                </div>
+                <button type="submit">Register
+                    <i class="zmdi zmdi-arrow-right"></i>
+                </button>
+            </form>
+            <div id="statusPesan" style="margin-top: 10px;"></div>
+        </div>
+    </div>
+</body>
+</html>
